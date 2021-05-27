@@ -1,18 +1,18 @@
-.tabs{}
-.tabs_title{
-    display: flex;
-    padding: 15rpx 0;
+.tabs {
 }
-.title_itme{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+.tabs_title {
+  display: flex;
 }
-.active{
-    color: var(--themeColor);
-    border-bottom: 5rpx solid currentColor;
+.title_itme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 20rpx 0;
 }
-.tabs_content{
-
+.active {
+  color: var(--themeColor);
+  border-bottom: 5rpx solid currentColor;
+}
+.tabs_content {
 }

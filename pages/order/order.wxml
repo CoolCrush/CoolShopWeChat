@@ -1,2 +1,27 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<!-- 监听自定义事件 bind+事件名="事件回调" -->
+<Tabs tabs="{{ tabs }}" bindtabsItemChange="handleTabsItemChange">
+  <view class="order_main">
+    <view class="order_item" wx:for="{{ orders }}" wx:key="order_id" wx:for-item="item1" wx:for-index="index1">
+      <view class="goods_main" wx:for="{{ item1.goods }}" wx:for-item="item2" wx:for-index="index2" wx:key="goods_id">
+        <view class="goods_image">
+          <image src="{{item2.goods_small_logo?item2.goods_small_logo:'https://img.coolcr.cn/2020/04/02/223481ad04b68.png'}}" mode="widthFix"></image>
+        </view>
+        <view class="goods_info">
+          <view class="goods_name">{{ item2.goods_name }}</view>
+          <view class="goods_pay_info">
+            <view class="goods_price">￥{{ item2.goods_price }}</view>
+            <view class="goods_number">X{{ item2.goods_number }}</view>
+          </view>
+        </view>
+      </view>
+      <view class="order_time_row">
+        <view class="order_time_text">订单日期</view>
+        <view class="order_time_value">{{ item1.create_time_cn }}</view>
+      </view>
+      <view class="order_price_row">
+        <view class="order_price_text">合计:</view>
+        <view class="order_price_value">{{ item1.order_price }}</view>
+      </view>
+    </view>
+  </view>
+</Tabs>

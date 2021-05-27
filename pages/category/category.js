@@ -73,6 +73,7 @@ Page({
     //     })
     //   })
     const res = await request({ url: "/categories" });
+    
     // this.setData是设置data中的数据
     this.Cates = res;
 

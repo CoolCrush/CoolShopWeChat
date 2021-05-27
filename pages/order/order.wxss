@@ -1,1 +1,43 @@
-/* pages/order/order.wxss */
+.order_main .order_item {
+  padding: 20rpx;
+  border-bottom: 1px solid #333;
+  color: #666;
+}
+.order_main .order_item .goods_main {
+  display: flex;
+}
+.order_main .order_item .goods_main .goods_image {
+  flex: 3;
+}
+.order_main .order_item .goods_main .goods_image image {
+  width: 60%;
+}
+.order_main .order_item .goods_main .goods_info {
+  flex: 6;
+}
+.order_main .order_item .goods_main .goods_info .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.order_main .order_item .goods_main .goods_info .goods_pay_info {
+  text-align: right;
+}
+.order_main .order_item .goods_main .goods_info .goods_pay_info .goods_price {
+  color: var(--themeColor);
+}
+.order_main .order_item .order_time_row {
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+.order_main .order_item .order_price_row {
+  display: flex;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+.order_main .order_item .order_price_row .order_price_value {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

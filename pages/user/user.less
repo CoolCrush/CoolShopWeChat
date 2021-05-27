@@ -1,0 +1,139 @@
+Page {
+  background: #ecebe8;
+}
+
+.user_info_wrap {
+  height: 45vh;
+  overflow: hidden;
+  background-color: var(--themeColor);
+  position: relative;
+
+  .user_img_wrap {
+    position: relative;
+
+    .user_bg {
+      height: 50vh;
+      // 照片背景 高斯模糊
+      filter: blur(10rpx);
+    }
+
+    .user_info {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 20%;
+      text-align: center;
+
+      .user_icon {
+        width: 150rpx;
+        height: 150rpx;
+        border-radius: 50%;
+      }
+
+      .user_name {
+        margin-top: 20rpx;
+        color: #fff;
+        font-size: 30rpx;
+      }
+    }
+  }
+
+  .user_btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40%;
+  }
+}
+
+.user_content {
+  position: relative;
+
+  .user_main {
+    color: #666;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40rpx;
+
+    .history_wrap {
+      background: #fff;
+      display: flex;
+      border-radius: 10rpx;
+
+      navigator {
+        flex: 1;
+        text-align: center;
+        padding: 10px 0;
+
+        .his_num {
+          color: var(--themeColor);
+        }
+
+        .his_name {
+        }
+      }
+    }
+
+    .orders_wrap {
+      background: #fff;
+      margin-top: 20rpx;
+      border-radius: 10rpx;
+
+      .orders_title {
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+      }
+
+      .orders_content {
+        display: flex;
+
+        navigator {
+          padding: 15rpx 0;
+          flex: 1;
+          text-align: center;
+
+          .iconfont {
+            color: var(--themeColor);
+            font-size: 60rpx;
+          }
+
+          .order_name {
+          }
+        }
+      }
+    }
+
+    .address_wrap {
+      background: #fff;
+      margin-top: 20rpx;
+      border-radius: 10rpx;
+      padding: 20rpx;
+    }
+
+    .app_info_wrap {
+      background: #fff;
+      margin-top: 20rpx;
+      border-radius: 10rpx;
+
+      .app_info_content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .app_info_item {
+        padding: 20rpx;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+
+    .recommend_wrap {
+      background: #fff;
+      margin-top: 20rpx;
+      margin-bottom: 50rpx;
+      border-radius: 10rpx;
+      padding: 20rpx;
+    }
+  }
+}

@@ -4,9 +4,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    tabs:{
-      type:Array,
-      value:[]
+    tabs: {
+      type: Array,
+      value: []
     }
   },
 
@@ -22,11 +22,11 @@ Component({
    */
   methods: {
     // item点击事件
-    handleItemTap(e){
+    handleItemTap(e) {
       // 1 获取点击item的索引
-      const {index} = e.currentTarget.dataset;
+      const { index } = e.currentTarget.dataset;
       // 2 触发 父组件中的事件 自定义
-      this.triggerEvent("tabsItemChange",{index});
+      this.triggerEvent("tabsItemChange", { index });
     }
   }
 })

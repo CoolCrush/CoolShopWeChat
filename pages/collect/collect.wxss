@@ -1,1 +1,49 @@
-/* pages/collect/collect.wxss */
+.collect_main {
+  background: #f2f3f7;
+}
+.collect_main .collect_title {
+  padding: 40rpx 0;
+}
+.collect_main .collect_title .active {
+  color: var(--themeColor);
+  border: 1rpx solid currentColor;
+}
+.collect_main .collect_title .collect_tips {
+  background: #fff;
+  padding: 15rpx;
+  margin-left: 25rpx;
+  border: 1rpx solid #ccc;
+}
+.collect_main .collect_content {
+  background: #fff;
+}
+.collect_main .collect_content .goods_item {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+.collect_main .collect_content .goods_item .goods_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect_main .collect_content .goods_item .goods_img_wrap image {
+  width: 70%;
+}
+.collect_main .collect_content .goods_item .goods_list_wrap {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* 文本显示为两行,超过部分隐藏并使用省略号 */
+}
+.collect_main .collect_content .goods_item .goods_list_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect_main .collect_content .goods_item .goods_list_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
