@@ -1,29 +1,26 @@
 # CoolShopWeChat
 
-#### 介绍
-微信小程序版本的CoolShop，使用原生微信小程序编写的购物小程序。
+### 介绍
+微信小程序版本的CoolShop，使用原生开发的购物小程序。
 
-#### 软件架构
-软件架构说明
+### 页面展示
 
+##### 首页
 
-#### 安装教程
+![首页](./pic/pic1.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 分类
 
-#### 使用说明
+![分类](./pic/pic2.png)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+##### 分类
 
-#### 参与贡献
+![购物车](./pic/pic3.png)分类
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+![我的](./pic/pic4.png)分类
 
+![订单查询](./pic/pic5.png)分类
 
+![商品详情](./pic/pic6.png)分类
+
+![意见反馈](./pic/pic8.png)
